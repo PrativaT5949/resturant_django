@@ -1,0 +1,872 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl py-5 bg-dark hero-header mb-5">
+          <div class="container my-5 py-5">
+            <div class="row align-items-center g-5">
+              <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-3 text-white animated slideInLeft">
+                  Enjoy Our<br />Delicious Meal {{ object.title }}
+                </h1>
+                <p class="text-white animated slideInLeft mb-4 pb-2">
+                  Experience the perfect blend of flavor and warmth in every bite. Our dishes are made with fresh ingredients and a passion for great taste. Join us for a memorable meal in a cozy, welcoming setting.
+                </p>
+                <a
+                  href="#booking"
+                  class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"
+                  >Book A Table{{ object.button_text }}</a
+                >
+              </div>
+              <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                <img
+                  class="img-fluid"
+                  src="{% static 'img/hero.png' %}"
+                  alt=""
+                  src="{{ object.image.url }}"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar & Hero End -->
+
+      <!-- Service Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                  <h5>Master Chefs</h5>
+                  <p>
+                  Our skilled chefs craft every dish with passion and precision
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                  <h5>Quality Food</h5>
+                  <p>
+                 We use only the freshest, highest-quality ingredients
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                  <h5>Online Order</h5>
+                  <p>
+                   Order your favorites easily from the comfort of home.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                  <h5>24/7 Service</h5>
+                  <p>
+                    Our dedicated team is here to assist you 24/7, ensuring you have the best dining experience possible.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Service End -->
+
+      <!-- About Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="row g-3 ">
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded w-100 wow zoomIn"
+                    data-wow-delay="0.1s"
+                    src="{% static 'img/about-1.png' %}"
+                  />
+                </div>
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded w-75 wow zoomIn"
+                    data-wow-delay="0.3s"
+                    src="{% static 'img/about-2.png' %}"
+                    style="margin-top: 25%"
+                  />
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-75 wow zoomIn"
+                    data-wow-delay="0.5s"
+                    src="{% static 'img/about-3.png' %}"
+                  />
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded w-100 wow zoomIn"
+                    data-wow-delay="0.7s"
+                    src="{% static 'img/about-4.png' %}"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h5
+                class="section-title ff-secondary text-start text-primary fw-normal"
+              >
+                About Us
+              </h5>
+              <h1 class="mb-4">
+                Welcome to
+                <i class="fa fa-utensils text-primary me-2"></i>Dalo
+              </h1>
+              <p class="mb-4">
+                Welcome to Dalo, where passion meets perfection in every dish. With over 15 years of culinary experience, our master chefs blend traditional flavors with modern techniques to create unforgettable meals. We believe that great food starts with the finest ingredients and is crafted with love and care.
+              </p>
+              <p class="mb-4">
+               Our cozy and inviting atmosphere is the perfect place to enjoy quality time with family and friends. Whether you're here for a quick lunch or a celebratory dinner, we promise an exceptional dining experience filled with warmth, flavor, and hospitality. Join us and discover why our guests keep coming back.
+              </p>
+              <div class="row g-4 mb-4">
+                <div class="col-sm-6">
+                  <div
+                    class="d-flex align-items-center border-start border-5 border-primary px-3"
+                  >
+                    <h1
+                      class="flex-shrink-0 display-5 text-primary mb-0"
+                      data-toggle="counter-up"
+                    >
+                      15
+                    </h1>
+                    <div class="ps-4">
+                      <p class="mb-0">Years of</p>
+                      <h6 class="text-uppercase mb-0">Experience</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div
+                    class="d-flex align-items-center border-start border-5 border-primary px-3"
+                  >
+                    <h1
+                      class="flex-shrink-0 display-5 text-primary mb-0"
+                      data-toggle="counter-up"
+                    >
+                    10
+                    </h1>
+                    <div class="ps-4">
+                      <p class="mb-0">Popular</p>
+                      <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+
+      <!-- Menu Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5
+              class="section-title ff-secondary text-center text-primary fw-normal"
+            >
+              Food Menu
+            </h5>
+            <h1 class="mb-5">Most Popular Items</h1>
+          </div>
+          <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+            <ul
+              class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5"
+            >
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                  data-bs-toggle="pill"
+                  href="#tab-1"
+                >
+                  <i class="fa fa-coffee fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <small class="text-body">Popular</small>
+                    <h6 class="mt-n1 mb-0">Breakfast</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 pb-3"
+                  data-bs-toggle="pill"
+                  href="#tab-2"
+                >
+                  <i class="fa fa-hamburger fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <small class="text-body">Special</small>
+                    <h6 class="mt-n1 mb-0">Launch</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                  data-bs-toggle="pill"
+                  href="#tab-3"
+                >
+                  <i class="fa fa-utensils fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <small class="text-body">Lovely</small>
+                    <h6 class="mt-n1 mb-0">Dinner</h6>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break1.png' %}"
+                        alt=""
+                        style="width: 80px; height: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Tacos</span>
+                          <span class="text-primary">Rs 250</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Tacos are a traditional Mexican dish consisting of a folded or rolled tortilla filled with various ingredients like meats, beans, cheese, vegetables, and sauces.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break2.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Croissant Egg Sandwich</span>
+                          <span class="text-primary">Rs 230</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A delicious croissant filled with scrambled eggs and cheese.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break3.png' %}"
+                        alt=""
+                        style="width: 80px; height: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chole Bhature</span>
+                          <span class="text-primary">Rs 115</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Chole Bhature is a popular North Indian dish consisting of spicy chickpeas served with deep-fried bread called bhature.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break4.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Buckwheat Pancakes</span>
+                          <span class="text-primary">Rs 120</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Buckwheat pancakes are a delicious and healthy breakfast option, made with buckwheat flour and served with maple syrup.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break5.png' %}"
+                        alt=""
+                        style="width: 80px; height: 60px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Waffles</span>
+                          <span class="text-primary">Rs 225</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Waffles are a delicious breakfast option, made with a batter and cooked in a waffle iron until golden brown.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break6.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Fruit Salad</span>
+                          <span class="text-primary">Rs 200</span>
+                        </h5>
+                        <small class="fst-italic"
+                          > Mix of fresh fruits,dry fruits and nuts.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break7.png' %}"
+                        alt=""
+                        style="width: 80px; height: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Sausage</span>
+                          <span class="text-primary">Rs 85</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Succulent, perfectly spiced sausage, grilled to juicy perfection and bursting with rich, smoky flavor.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break8.png' %}"
+                        alt=""
+                        style="width: 80px; height: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Savory Bowl</span>
+                          <span class="text-primary">Rs 250</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Bowl filled with savory ingredients, perfect for a hearty meal.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-2" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la1.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Thakali Khana</span>
+                          <span class="text-primary">Rs 450</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A traditional Nepali meal served with rice, lentils, and vegetables.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la2.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Items</span>
+                          <span class="text-primary">Rs 300</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A variety of chicken dishes served with french fries.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la3.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Combo Items</span>
+                          <span class="text-primary">Rs 450</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A combination of our best-selling items served with a side of salad</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la4.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>MoMO</span>
+                          <span class="text-primary">Rs 180</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A popular Nepali dumpling filled with meat or vegetables.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la5.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Pizza</span>
+                          <span class="text-primary">Rs 450</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Available in vegetarian and non-vegetarian options.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la6.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Best combo</span>
+                          <span class="text-primary">Rs 520</span>
+                        </h5>
+                        <small class="fst-italic"
+                          > Combination of the Pizza,Burger and other side dishes.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la7.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Malaysian Chicken Curry</span>
+                          <span class="text-primary">Rs 450</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Aromatic curry with tender chicken pieces, served with rice.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la8.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Fried Rice with Chicken</span>
+                          <span class="text-primary">Rs 540</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A delicious combination of fried rice and tender chicken pieces.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-3" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-1.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Fried Rice</span>
+                          <span class="text-primary">Rs 180</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A delicious combination of fried rice and tender chicken pieces.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-2.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>American Chopsuey</span>
+                          <span class="text-primary">Rs 325</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A delicious combination of noodles, vegetables, and a tangy sauce.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-3.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Keema Naan</span>
+                          <span class="text-primary">Rs 180</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Combination of naan bread stuffed with spiced minced meat.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-4.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Ramen Bowls</span>
+                          <span class="text-primary">Rs 350</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A flavorful Japanese noodle soup with various toppings.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-5.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Hot Wings</span>
+                          <span class="text-primary">Rs 350</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >These Wings pack the perfect flavor punch!</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-6.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Grill Fish </span>
+                          <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Grilling fish brings out a smoky, succulent flavor while keeping the delicate flesh tender and juicy.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-7.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Pork Sekuwa</span>
+                          <span class="text-primary">Rs 400</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Marinated pork pieces skewered and grilled to perfection. </small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-8.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Biryani</span>
+                          <span class="text-primary">Rs 350</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Aromatic layered rice with marinated meat and rich spices, slow-cooked for deep flavor.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu End -->
+
+      <!-- Team Start -->
+      <div class="container-xxl pt-5 pb-3">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5
+              class="section-title ff-secondary text-center text-primary fw-normal"
+            >
+              Team Members
+            </h5>
+            <h1 class="mb-5">Our Master Chefs</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item text-center rounded overflow-hidden">
+                <div class="rounded-circle overflow-hidden m-4">
+                  <img
+                    class="img-fluid"
+                    src="{% static 'img/team-1.png' %}"
+                    alt=""
+                  />
+                </div>
+                <h5 class="mb-0">Full Name</h5>
+                <small>Designation</small>
+                <div class="d-flex justify-content-center mt-3">
+                  <a class="btn btn-square btn-primary mx-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="btn btn-square btn-primary mx-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="btn btn-square btn-primary mx-1" href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="team-item text-center rounded overflow-hidden">
+                <div class="rounded-circle overflow-hidden m-4">
+                  <img
+                    class="img-fluid"
+                    src="{% static 'img/team-2.png' %}"
+                    alt=""
+                  />
+                </div>
+                <h5 class="mb-0">Full Name</h5>
+                <small>Designation</small>
+                <div class="d-flex justify-content-center mt-3">
+                  <a class="btn btn-square btn-primary mx-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="btn btn-square btn-primary mx-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="btn btn-square btn-primary mx-1" href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="team-item text-center rounded overflow-hidden">
+                <div class="rounded-circle overflow-hidden m-4">
+                  <img
+                    class="img-fluid"
+                    src="{% static 'img/team-3.png' %}"
+                    alt=""
+                  />
+                </div>
+                <h5 class="mb-0">Full Name</h5>
+                <small>Designation</small>
+                <div class="d-flex justify-content-center mt-3">
+                  <a class="btn btn-square btn-primary mx-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="btn btn-square btn-primary mx-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="btn btn-square btn-primary mx-1" href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item text-center rounded overflow-hidden">
+                <div class="rounded-circle overflow-hidden m-4">
+                  <img
+                    class="img-fluid"
+                    src="{% static 'img/team-4.png' %}"
+                    alt=""
+                  />
+                </div>
+                <h5 class="mb-0">Full Name</h5>
+                <small>Designation</small>
+                <div class="d-flex justify-content-center mt-3">
+                  <a class="btn btn-square btn-primary mx-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="btn btn-square btn-primary mx-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="btn btn-square btn-primary mx-1" href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Team End -->
+      {% endblock %}

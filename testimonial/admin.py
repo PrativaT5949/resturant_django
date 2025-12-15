@@ -1,0 +1,10 @@
+from django.contrib import admin
+from .models import Testimonial
+
+# Register your models here.
+
+
+@admin.register(Testimonial)
+class TestimonialAdmin(admin.ModelAdmin):
+    list_display = ("client_name", "profession")
+    search_fields = ("client_name", "profession", "message")

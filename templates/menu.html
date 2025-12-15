@@ -1,0 +1,604 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+        <div class="container-xxl py-5 bg-dark hero-header mb-5">
+          <div class="container text-center my-5 pt-5 pb-4">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">
+              Food Menu
+            </h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center text-uppercase">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li
+                  class="breadcrumb-item text-white active"
+                  aria-current="page"
+                >
+                  Menu
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar & Hero End -->
+      <!-- Menu Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5
+              class="section-title ff-secondary text-center text-primary fw-normal"
+            >
+              Food Menu
+            </h5>
+            <h1 class="mb-5">Most Popular Items</h1>
+          </div>
+          <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+            <ul
+              class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5"
+            >
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                  data-bs-toggle="pill"
+                  href="#tab-1"
+                >
+                  <i class="fa fa-coffee fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <small class="text-body">Popular</small>
+                    <h6 class="mt-n1 mb-0">Breakfast</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 pb-3"
+                  data-bs-toggle="pill"
+                  href="#tab-2"
+                >
+                  <i class="fa fa-hamburger fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <small class="text-body">Special</small>
+                    <h6 class="mt-n1 mb-0">Launch</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                  data-bs-toggle="pill"
+                  href="#tab-3"
+                >
+                  <i class="fa fa-utensils fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <small class="text-body">Lovely</small>
+                    <h6 class="mt-n1 mb-0">Dinner</h6>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break1.png' %}"
+                        alt=""
+                        style="width: 80px; height: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Tacos</span>
+                          <span class="text-primary">Rs 250</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Tacos are a traditional Mexican dish consisting of a folded or rolled tortilla filled with various ingredients like meats, beans, cheese, vegetables, and sauces.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break2.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Croissant Egg Sandwich</span>
+                          <span class="text-primary">Rs 230</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A delicious croissant filled with scrambled eggs and cheese.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break3.png' %}"
+                        alt=""
+                        style="width: 80px; height: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chole Bhature</span>
+                          <span class="text-primary">Rs 115</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Chole Bhature is a popular North Indian dish consisting of spicy chickpeas served with deep-fried bread called bhature.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break4.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Buckwheat Pancakes</span>
+                          <span class="text-primary">Rs 120</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Buckwheat pancakes are a delicious and healthy breakfast option, made with buckwheat flour and served with maple syrup.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break5.png' %}"
+                        alt=""
+                        style="width: 80px; height: 60px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Waffles</span>
+                          <span class="text-primary">Rs 225</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Waffles are a delicious breakfast option, made with a batter and cooked in a waffle iron until golden brown.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break6.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Fruit Salad</span>
+                          <span class="text-primary">Rs 200</span>
+                        </h5>
+                        <small class="fst-italic"
+                          > Mix of fresh fruits,dry fruits and nuts.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break7.png' %}"
+                        alt=""
+                        style="width: 80px; height: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Sausage</span>
+                          <span class="text-primary">Rs 85</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Succulent, perfectly spiced sausage, grilled to juicy perfection and bursting with rich, smoky flavor.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/break8.png' %}"
+                        alt=""
+                        style="width: 80px; height: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Savory Bowl</span>
+                          <span class="text-primary">Rs 250</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Bowl filled with savory ingredients, perfect for a hearty meal.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-2" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la1.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Thakali Khana</span>
+                          <span class="text-primary">Rs 450</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A traditional Nepali meal served with rice, lentils, and vegetables.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la2.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Chicken Items</span>
+                          <span class="text-primary">Rs 300</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A variety of chicken dishes served with french fries.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la3.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Combo Items</span>
+                          <span class="text-primary">Rs 450</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A combination of our best-selling items served with a side of salad</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la4.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>MoMO</span>
+                          <span class="text-primary">Rs 180</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A popular Nepali dumpling filled with meat or vegetables.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la5.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Pizza</span>
+                          <span class="text-primary">Rs 450</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Available in vegetarian and non-vegetarian options.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la6.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Best combo</span>
+                          <span class="text-primary">Rs 520</span>
+                        </h5>
+                        <small class="fst-italic"
+                          > Combination of the Pizza,Burger and other side dishes.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la7.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Malaysian Chicken Curry</span>
+                          <span class="text-primary">Rs 450</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Aromatic curry with tender chicken pieces, served with rice.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/la8.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Fried Rice with Chicken</span>
+                          <span class="text-primary">Rs 540</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A delicious combination of fried rice and tender chicken pieces.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-3" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-1.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Fried Rice</span>
+                          <span class="text-primary">Rs 180</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A delicious combination of fried rice and tender chicken pieces.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-2.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>American Chopsuey</span>
+                          <span class="text-primary">Rs 325</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A delicious combination of noodles, vegetables, and a tangy sauce.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-3.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Keema Naan</span>
+                          <span class="text-primary">Rs 180</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Combination of naan bread stuffed with spiced minced meat.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-4.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Ramen Bowls</span>
+                          <span class="text-primary">Rs 350</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >A flavorful Japanese noodle soup with various toppings.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-5.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Hot Wings</span>
+                          <span class="text-primary">Rs 350</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >These Wings pack the perfect flavor punch!</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-6.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Grill Fish </span>
+                          <span class="text-primary">$115</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Grilling fish brings out a smoky, succulent flavor while keeping the delicate flesh tender and juicy.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-7.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Pork Sekuwa</span>
+                          <span class="text-primary">Rs 400</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Marinated pork pieces skewered and grilled to perfection. </small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="{% static 'img/menu-8.png' %}"
+                        alt=""
+                        style="width: 80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span>Biryani</span>
+                          <span class="text-primary">Rs 350</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Aromatic layered rice with marinated meat and rich spices, slow-cooked for deep flavor.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+           <!-- Menu End -->
+     {% endblock %}
