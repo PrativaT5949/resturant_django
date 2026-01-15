@@ -25,7 +25,7 @@ This project is created as a learning-based Django project. It contains multiple
 ## 📸 Screenshots
 
 ![Home Page](image/home.png)
-![Menu Page](image/menu.png)
+![Menu Page](image/Menu.png)
 ![Reservation Page](image/Reservation.png)
 ![AboutUS Page](image/AboutUs.png)
 ![Service Page](image/Service.png)
