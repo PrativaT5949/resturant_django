@@ -23,12 +23,18 @@ This project is created as a learning-based Django project. It contains multiple
 - Contact page
 
 ## 📸 Screenshots
-
+**Home paga**
 ![Home Page](image/home.png)
+**Menu Page**
 ![Menu Page](image/Menu.png)
+**Reservation Page**
 ![Reservation Page](image/Reservation.png)
+**AboutUs Page**
 ![AboutUS Page](image/AboutUs.png)
+**Service Page**
 ![Service Page](image/Service.png)
+**About Page**
 ![About Page](image/About.png)
+**Contact Page**
 ![Contact Page](image/Contact.png)
 
